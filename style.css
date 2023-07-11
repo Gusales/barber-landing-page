@@ -84,6 +84,15 @@ i {
   padding: 0 8px;
 }
 
+.center-box {
+  background: #ffffff;
+  padding: 52px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .bg-home {
   position: relative;
 }
@@ -196,6 +205,125 @@ i {
 @media screen and (max-width: 768px) {
   .about-content {
     flex-direction: column;
+  }
+}
+.services-content h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+.services-content p {
+  max-width: 780px;
+  text-align: center;
+  line-height: 150%;
+  margin-bottom: 12px;
+}
+
+.hair-cuts {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 0 44px 32px 44px;
+}
+
+.hair-cut {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px -1px 16px -4px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.hair-cut img {
+  width: 100%;
+  max-width: 352px;
+  transition: transform 0.24s;
+}
+.hair-cut img:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+.hair-cut .hair-cut-info {
+  width: 100%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  z-index: 2;
+}
+.hair-cut .hair-cut-info button {
+  background: #D94140;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: default;
+  padding: 4px 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .hair-cuts {
+    flex-direction: column;
+  }
+  .hair-cut img {
+    max-width: 760px;
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 0;
+  gap: 24px;
+  color: #ffffff;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 8px;
+  color: #ffffff;
+}
+
+.btn-whatsapp {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 99;
+}
+.btn-whatsapp img {
+  max-width: 72px;
+  transition: transform 0.4s;
+}
+.btn-whatsapp img:hover {
+  transform: scale(1.1);
+}
+.btn-whatsapp .tooltip-text {
+  width: 120px;
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  top: 8px;
+  left: -144px;
+  background: #0c2135;
+  color: #ffffff;
+  padding: 4px;
+  border-radius: 8px;
+  text-align: center;
+  transition: opacity 0.8s;
+}
+.btn-whatsapp:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-whatsapp img {
+    max-width: 54px;
   }
 }
 body {

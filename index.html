@@ -9,16 +9,20 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="./style.css" />
 
     <title>Barber Landing Page</title>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 <body>
     <div class="bg-home">
         <header>
             <nav class="header-content container">
-                <div class="header-icons">
+                <div class="header-icons" data-aos="fade-down">
                     <a href="#">
                         <i class="fa-brands fa-instagram fa-2x"></i>
                     </a>
@@ -30,37 +34,124 @@
                     </a>
                 </div>
 
-                <div class="header-logo">
-                    <img src="./assets/logo.svg" alt="Logo da barbearia" />
+                <div class="header-logo" data-aos="fade-up" data-aos-delay="300">
+                    <img src="./assets/logo.svg" alt="Logo da barbearia" data-aos="flip-up" data-aos-delay="300" data-aos-duration="1500" />
                 </div>
 
-                <div>
+                <div data-aos="fade-down">
                     <a href="#" class="header-button">
                         Agendar horário
                     </a>
                 </div>
             </nav>
 
-            <main class="container hero">
+            <main class="container hero" data-aos="fade-up" data-aos-delay="300">
                 <h1>ESTILO É UM REFLEXO DA SUA ATITUDE E SUA PERSONALIDADE.</h1>
                 <p>Horário de funcionamento: 09:00 ás 19:00</p>
-                <a href="#" class="button-contact" target="_blank">Agendar horário</a>
+                <a 
+                    href="https://api.whatsapp.com/send?phone=5511961857981&text=Quero%20realizar%20um%20agendamento"
+                    target="_blank" 
+                    class="button-contact">Agendar horário</a>
             </main>
         </header>
     </div>
 
     <section class="about">
         <div class="container about-content"> 
-            <picture>
+            <picture data-aos="zoom-in" data-aos-delay="100">
                 <img src="./assets/images.svg" alt="Imagem sobre a barbearia" />
             </picture>
 
-            <div class="about-descript">
+            <div class="about-descript" data-aos="zoom-out-left" data-aos-delay="250">
                 <h2>Sobre</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime atque vitae voluptates consequatur non ducimus odit, voluptas cumque perferendis, voluptatem itaque adipisci! Quo fugit harum dolor deserunt molestiae ex expedita.</p>
                 <p>Horário de funcionamento: <strong>09:00 ás 19:00</strong></p>
             </div>
         </div>
     </section>
+
+    <section class="services center-box">
+        <div class="services-content container">
+            <h2>Serviços</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit quisquam ducimus, consequatur est quia consequuntur voluptatem voluptatibus at, rerum reprehenderit possimus cum, enim eaque. Repellendus deleniti alias sunt laudantium magni!</p>
+        </div>
+        
+        <section class="hair-cuts">
+            <div class="hair-cut" data-aos="fade-up" data-aos-delay="150">
+                <picture>
+                    <img src="./assets/corte1.png" alt="Corte normal">
+                </picture>
+                <div class="hair-cut-info">
+                    <strong>Corte normal</strong>
+                    <button>R$45,00</button>
+                </div>
+            </div>
+            <div class="hair-cut" data-aos="fade-up" data-aos-delay="250">
+                <picture>
+                    <img src="./assets/corte2.png" alt="Corte normal">
+                </picture>
+                <div class="hair-cut-info">
+                    <strong>Barba Completa</strong>
+                    <button>R$35,00</button>
+                </div>
+            </div>
+            <div class="hair-cut" data-aos="fade-up" data-aos-delay="350">
+                <picture>
+                    <img src="./assets/corte3.png" alt="Corte normal">
+                </picture>
+                <div class="hair-cut-info">
+                    <strong>Cabelo e Barba</strong>
+                    <button>R$70,00</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <div class="center-box">
+        <h2>Venha conhecer</h2>
+    </div>
+
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2292.654924900975!2d-40.84510953652869!3d-14.894099578998354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7463b2f07544cc9%3A0xc72ac371fdb8aa9b!2sShopping%20Conquista%20Sul!5e0!3m2!1spt-BR!2sbr!4v1689088908753!5m2!1spt-BR!2sbr" 
+        height="450" 
+        width="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <footer class="footer">
+        <div class="footer-icons">
+            <a href="#">
+                <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-facebook fa-2x"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-tiktok fa-2x"></i>
+            </a>
+        </div>
+
+        <picture>
+            <img src="./assets/logo.svg" alt="Logo da barbearia" />
+        </picture>
+
+        <p>Copyright© 2023 | Dev Barbearia  - Todos os direitos reservados.</p>
+    </footer>
+
+    <a 
+    href="https://api.whatsapp.com/send?phone=5511961857981&text=Quero%20realizar%20um%20agendamento"
+    target="_blank"
+    class="btn-whatsapp"
+    data-aos="zoom-in-up"
+    data-aos-delay="400"
+    >
+        <img src="./assets/whatssapp.svg" alt="Botão de contato do Whatssapp" />
+        <span class="tooltip-text" >Entre em contato e agende seu horário!</span>
+    </a>
+
+    <script src="./script.js"></script>
 </body>
 </html>

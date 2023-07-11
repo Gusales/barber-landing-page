@@ -1,0 +1,67 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 54px 0;
+    gap: 24px;
+    color: $neutral-color-4;
+}
+
+.footer-icons{
+    display: flex;
+    gap: 8px;
+    color: $neutral-color-4;
+}
+
+.btn-whatsapp{
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 99;
+
+    img{
+        max-width: 72px;
+        transition: transform 0.4s;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+    .tooltip-text{
+        width: 120px;
+
+        visibility: hidden;
+        position: absolute;
+        opacity: 0;
+        top: 8px;
+        left: -144px;
+        
+        background: $brand-color-3;
+        color: $neutral-color-4;
+        padding: 4px;
+        border-radius: 8px;
+
+        text-align: center;
+        transition: opacity 0.8s;
+    }
+
+    &:hover{
+        .tooltip-text{
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .btn-whatsapp{
+        img{
+            max-width: 54px;
+        }
+    }
+}
+
+

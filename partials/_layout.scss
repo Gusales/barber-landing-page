@@ -5,6 +5,16 @@
     padding: 0 8px;
 }
 
+.center-box{
+    background: $neutral-color-4;
+    padding: 52px 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .bg-home{
     position: relative;
 
